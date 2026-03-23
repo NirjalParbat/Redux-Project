@@ -4,6 +4,10 @@ const UNSPLASH_KEY = import.meta.env.VITE_UNSPLASH_KEY
 const PEXELS_KEY = import.meta.env.VITE_PEXELS_KEY
 const GIPHY_KEY = import.meta.env.VITE_GIPHY_KEY
 
+
+// normalization
+
+
   
 export async function fetchPhotos(query, page,       per_page=20){
   const res = await axios.get('https://api.unsplash.com/search/photos', {
